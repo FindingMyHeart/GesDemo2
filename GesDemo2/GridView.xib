@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GridView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Au2-Ja-uDn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="BZ4-ox-pNd"/>
+                        <constraint firstAttribute="height" priority="997" constant="155" id="VEo-TM-YSD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6K-mR-oLp">
+                    <rect key="frame" x="0.0" y="272" width="320" height="208"/>
+                    <color key="backgroundColor" red="0.39250996092923351" green="0.61492757008264909" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="997" constant="208" id="2Cl-UN-qLO"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="LDd-AL-Pwc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-lm-Y4s">
+                    <rect key="frame" x="0.0" y="155" width="320" height="117"/>
+                    <color key="backgroundColor" red="0.45662247467110184" green="1" blue="0.30542456262505902" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="C7a-eG-a6Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="K6K-mR-oLp" secondAttribute="trailing" id="30q-xX-NUI"/>
+                <constraint firstAttribute="bottom" secondItem="K6K-mR-oLp" secondAttribute="bottom" id="861-4O-wHl"/>
+                <constraint firstItem="Au2-Ja-uDn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9C5-6o-w5X"/>
+                <constraint firstItem="K6K-mR-oLp" firstAttribute="top" secondItem="Ebp-lm-Y4s" secondAttribute="bottom" id="Ica-Xa-rWv"/>
+                <constraint firstItem="Au2-Ja-uDn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LMe-XY-8vm"/>
+                <constraint firstAttribute="trailing" secondItem="Au2-Ja-uDn" secondAttribute="trailing" id="OMd-Le-RIq"/>
+                <constraint firstItem="Ebp-lm-Y4s" firstAttribute="top" secondItem="Au2-Ja-uDn" secondAttribute="bottom" id="XeQ-St-TFd"/>
+                <constraint firstItem="K6K-mR-oLp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gKD-iY-mPZ"/>
+                <constraint firstItem="Ebp-lm-Y4s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hBN-ks-vh9"/>
+                <constraint firstAttribute="trailing" secondItem="Ebp-lm-Y4s" secondAttribute="trailing" id="ynB-Q4-d4f"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="blueHeight" destination="2Cl-UN-qLO" id="sKb-nz-Mzo"/>
+                <outlet property="blueView" destination="K6K-mR-oLp" id="A5o-nQ-8h9"/>
+                <outlet property="greenView" destination="Ebp-lm-Y4s" id="xbF-AY-3BF"/>
+                <outlet property="redHeight" destination="VEo-TM-YSD" id="IEO-9Z-6oN"/>
+                <outlet property="redView" destination="Au2-Ja-uDn" id="HI3-Pa-Gxq"/>
+            </connections>
+        </view>
+    </objects>
+</document>
